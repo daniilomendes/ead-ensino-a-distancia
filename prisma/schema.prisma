@@ -26,6 +26,7 @@ model Course {
   imageUrl String
   category Category @relation(fields: [categoryId], references: [id])
   categoryId String
+  episodes Episode[]
 }
 
 model Episode {
@@ -37,4 +38,6 @@ model Episode {
   imageUrl String
   videoUrl String
   secondsLong Int
+  course Course @relation(fields: [courseId], references: [id])
+  courseId String
 }
