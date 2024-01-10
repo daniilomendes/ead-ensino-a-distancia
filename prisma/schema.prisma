@@ -9,3 +9,32 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Category {
+  id String @id @default(uuid())
+  name String
+  slug String
+  imageUrl String
+  courses Course[]
+}
+
+model Course {
+  id String @id @default(uuid())
+  name String
+  slug String
+  description String
+  imageUrl String
+  category Category @relation(fields: [categoryId], references: [id])
+  categoryId String
+}
+
+model Episode {
+  id String @id @default(uuid())
+  name String
+  slug String
+  description String
+  order Int
+  imageUrl String
+  videoUrl String
+  secondsLong Int
+}
