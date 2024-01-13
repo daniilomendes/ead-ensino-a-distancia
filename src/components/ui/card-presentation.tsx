@@ -2,7 +2,7 @@ import SectionTitle from "./section-title";
 
 const CardPresentation = () => {
   return (
-    <div className="mb-5 mt-10 flex flex-col items-center justify-center">
+    <div className="mt-10 flex flex-col items-center justify-center">
       <SectionTitle className="">O QUE VOCÊ VAI ACESSAR</SectionTitle>
 
       <div className="container mx-auto p-5 ">
