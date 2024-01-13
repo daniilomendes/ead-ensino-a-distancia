@@ -17,7 +17,13 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "presentation-background": "url(/backgroundPresentationSection.png)"
+        "presentation-background": "url(/backgroundPresentationSection.png)",
+        "frontend-background": "url(/imgFrontend.png)",
+        "backend-background": "url(/imgBackend.png)",
+        "mobile-background": "url(/imgMobile.png)",
+        "git-background": "url(/imgGit.png)",
+        "projects-background": "url(/imgProjects.png)",
+        "career-background": "url(/imgCareer.png)",
       },
       colors: {
         border: "hsl(var(--border))",
