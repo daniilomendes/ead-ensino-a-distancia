@@ -1,26 +1,28 @@
 "use client";
 
 import Link from "next/link";
+import React from "react";
 import { Button } from "./button";
 import { Card } from "./card";
 import { signIn, signOut, useSession } from "next-auth/react";
-
 import { Avatar, AvatarImage } from "./avatar";
 import { AvatarFallback } from "@radix-ui/react-avatar";
 
-import React from "react";
-import Image from "next/image";
-
 const Header = () => {
+
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
+
   const { status, data } = useSession();
+
   const handleLoginClick = async () => {
     await signIn();
   };
+
   const handleLogoutClick = () => {
     setMenuIsOpen(false);
     signOut();
   };
+
   const handleMenuClick = () => setMenuIsOpen(!menuIsOpen);
   return (
     <Card className="flex items-center justify-between p-[1rem]">
