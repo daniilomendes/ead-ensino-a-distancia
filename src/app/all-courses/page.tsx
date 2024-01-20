@@ -1,6 +1,8 @@
+import Title from "./components/title";
+
 const AllCourses = () => {
     return ( <div>
-        TODOS OS CURSOS
+        <Title />
     </div> );
 }
  
