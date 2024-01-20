@@ -1,4 +1,4 @@
-import SectionTitle from "./section-title";
+import SectionTitle from "../../../components/ui/section-title";
 
 const CardPresentation = () => {
   return (
