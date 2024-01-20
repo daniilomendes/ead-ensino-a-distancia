@@ -24,6 +24,7 @@ module.exports = {
         "git-background": "url(/imgGit.png)",
         "projects-background": "url(/imgProjects.png)",
         "career-background": "url(/imgCareer.png)",
+        "desktop-all-courses-background": "url(/all-courses-background-desktop.jpg)",
       },
       colors: {
         border: "hsl(var(--border))",
